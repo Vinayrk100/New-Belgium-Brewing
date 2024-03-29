@@ -11,4 +11,7 @@ The dashboard contains 4 worksheets.<br>
 The file contains sample SQL queries. Please see the attached AdventureWorks_Schema for reference. 
 
 ## Sakila Queries:
-The file contains sample SQL queries using Sakila schema. Please see the SakilaSchema.png for reference.
+The file contains sample SQL queries using Sakila schema. Please see the SakilaSchema.png for reference.<br>
+
+### Tableau Public Profile
+https://public.tableau.com/app/profile/vinay.ramesh.kangokar/vizzes
