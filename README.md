@@ -5,6 +5,8 @@ The dashboard contains 4 worksheets.<br>
 3. Sales Forecast - Forecasting sales of next 15 days using two years historical data
 4. Drill down - This worksheet contains drilled down analysis of profits
 
+## Amazon Prime Video Dashboard
+
 ## AdventureWorks Queries:
 The file contains sample SQL queries. Please see the attached AdventureWorks_Schema for reference. 
 
