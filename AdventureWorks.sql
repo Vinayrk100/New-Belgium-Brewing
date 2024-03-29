@@ -50,6 +50,20 @@ inner join dbo.DimPromotion as DimP on FRS.PromotionKey = DimP.PromotionKey
 group by DimP.EnglishPromotionType, DimP.EnglishPromotionName, DimP.EnglishPromotionCategory
 
 
+-- Find the customer who has the highest sale amount in Internet Sales
+select distinct customerKey 
+from dbo.FactInternetSales 
+group by customerKey
+having sum(SalesAmount) > (select max(total) from 
+(select customerKey, sum(SalesAmount) as total from dbo.FactInternetSales group by CustomerKey) as a)
+
+--Find sales orders whose average is greater than the total average for internet sales
+select SalesOrderNumber, avg(SalesAmount) as Avg_Sales
+from dbo.FactInternetSales
+group by SalesOrderNumber
+having avg(SalesAmount) > (select avg(SalesAmount) from dbo.FactInternetSales)
+
+
 --What are the sales by year by sales channels (internet, reseller & total)?
 select YEAR(dbo.FactInternetSales.ShipDate) as years_internet,
 sum(dbo.FactInternetSales.SalesAmount) as totalsales_internet,
