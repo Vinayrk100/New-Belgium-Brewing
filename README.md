@@ -1,4 +1,4 @@
-##Superstore dashboard:<br>
+## Superstore dashboard:<br>
 The dashboard contains 4 worksheets.<br>
 1. Sales Analysis - Analyzing sales using metrics and other dimensions
 2. Profits Analysis - Analyzing profit using metrics and other dimensions
